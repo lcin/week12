@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.android.uoso.week12">
+
+    <!-- SD卡存储和读取权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 在SD卡创建文件权限 -->
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取网络状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 接收短信的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.ActWechat" />
+        <activity android:name=".activity.ActWechat2" />
+        <activity android:name=".activity.ActLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- authorities 授权信息 -->
+        <!-- name ContentProvider全名 -->
+        <!-- exported 是否允许其他应用访问 -->
+        <provider
+            android:name=".utils.MyProvider"
+            android:authorities="com.android.uoso.week12.utils.MyProvider"
+            android:exported="true" />
+        <!-- exported 是否允许接收其他应用的广播 -->
+        <!-- enabled 是否启用这个广播接收者 -->
+        <!--
+        <receiver android:name=".utils.MyRecevier"
+            android:exported="true"
+            android:enabled="true">
+            &lt;!&ndash;意图过滤 只接收到指定意图的广播&ndash;&gt;
+            <intent-filter>
+                <action android:name="com.android.uoso.week12.TEST"/>
+            </intent-filter>
+        </receiver>
+        -->
+        <!-- 注册服务 -->
+        <service android:name=".utils.MyService" />
+
+        <activity android:name=".activity.ActService" />
+
+        <service android:name=".utils.MyIntentService" />
+        <service android:name=".utils.MyBindService" />
+
+        <activity android:name=".activity.ActVideo"></activity>
+    </application>
+
+</manifest>

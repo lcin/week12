@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <!--oneshot 只播放一次-->
+    <!--animation-list 就是帧动画的一个组合标签-->
+    <item android:drawable="@drawable/img1"
+        android:duration="500"/>
+    <!--duration 间隔时间-->
+    <item android:drawable="@drawable/img2"
+        android:duration="500"/>
+    <item android:drawable="@drawable/img3"
+        android:duration="500"/>
+    <item android:drawable="@drawable/img4"
+        android:duration="500"/>
+    <item android:drawable="@drawable/img5"
+        android:duration="500"/>
+    <item android:drawable="@drawable/img6"
+        android:duration="500"/>
+    <item android:drawable="@drawable/img7"
+        android:duration="500"/>
+    <item android:drawable="@drawable/img8"
+        android:duration="500"/>
+    <item android:drawable="@drawable/img9"
+        android:duration="500"/>
+    <item android:drawable="@drawable/img10"
+        android:duration="500"/>
+</animation-list>

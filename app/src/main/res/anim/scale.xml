@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--缩放-->
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromXScale="1"
+    android:toXScale="2"
+    android:fromYScale="1"
+    android:toYScale="2"
+    android:pivotY="50%"
+    android:pivotX="50%"
+    android:duration="2000">
+<!--fromXScale x轴开始时的缩放比例-->
+    <!--toXScale x轴结束时的缩放比例-->
+    <!--pivotX  x轴开始缩放的中心点-->
+</scale>

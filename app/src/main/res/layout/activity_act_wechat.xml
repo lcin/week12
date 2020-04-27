@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ActWechat"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_weight="1"
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RadioButton
+            android:id="@+id/rb_wechat"
+            android:textColor="@drawable/tx_wechat"
+            android:drawableTop="@drawable/st_wechat"
+            android:gravity="center"
+            android:button="@null"
+            android:text="微信"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/rb_contact"
+            android:textColor="@drawable/tx_wechat"
+            android:drawableTop="@drawable/st_contact"
+            android:gravity="center"
+            android:button="@null"
+            android:text="联系人"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/rb_found"
+            android:textColor="@drawable/tx_wechat"
+            android:drawableTop="@drawable/st_found"
+            android:gravity="center"
+            android:button="@null"
+            android:text="发现"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/rb_me"
+            android:textColor="@drawable/tx_wechat"
+            android:drawableTop="@drawable/st_me"
+            android:gravity="center"
+            android:button="@null"
+            android:text="我"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+
+</LinearLayout>
